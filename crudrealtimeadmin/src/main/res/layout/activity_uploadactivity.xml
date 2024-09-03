@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/upload"
+    tools:context=".UPLOADACTIVITY">
+
+    <Button
+        android:id="@+id/save"
+        android:fontFamily="@font/ft"
+        android:textStyle="bold"
+        android:layout_width="332dp"
+        android:layout_height="53dp"
+        android:background="@drawable/borderwithcolor"
+        android:text="UPLOAD"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.98" />
+
+    <LinearLayout
+        android:fontFamily="@font/ft"
+        android:textAllCaps="true"
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="372dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.824">
+
+        <EditText
+            android:id="@+id/oname"
+            android:fontFamily="@font/ft"
+
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:layout_weight="1"
+            android:background="@drawable/custo"
+            android:hint="ENTER OWNER NAME" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".2" />
+
+        <EditText
+            android:fontFamily="@font/ft"
+            android:id="@+id/vname"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_weight="
+1"
+            android:background="@drawable/custo"
+            android:hint="ENTER VEHICLE NAME" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".2" />
+
+        <EditText
+            android:fontFamily="@font/ft"
+            android:id="@+id/rto"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:background="@drawable/custo"
+
+            android:hint="ENTER VEHICLE RTO" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".2" />
+
+        <EditText
+            android:fontFamily="@font/ft"
+            android:id="@+id/rtonum"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:layout_weight="1"
+            android:background="@drawable/custo"
+            android:hint="ENTER VEHICLE NUMBER" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+
+
+    android:background="@drawable/up"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".updateactiviy">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="372dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.685" >
+
+        <EditText
+            android:fontFamily="@font/ft"
+            android:id="@+id/utextView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hint=" ENTER VEHICLE NUMBER "
+            android:textColor="@color/black"
+            android:background="@drawable/custo"
+          />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+
+            android:textColor="@color/black"
+            android:layout_weight=".2" />
+
+        <EditText
+
+
+            android:id="@+id/utextView2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+
+            android:textColor="@color/black"
+            android:background="@drawable/custo"
+           android:hint=" ENTER OWNER NAME"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".2" />
+
+        <EditText
+
+
+            android:id="@+id/utextView3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:background="@drawable/custo"
+            android:hint=" ENTER VEHICLE NAME"
+       />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".2" />
+
+        <EditText
+                        android:id="@+id/utextView4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:background="@drawable/custo"
+            android:hint=" ENTER RTO DETAILS" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="332dp"
+        android:layout_height="53dp"
+        android:background="@drawable/borderwithcolor"
+        android:text="UPDATE"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.863" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
